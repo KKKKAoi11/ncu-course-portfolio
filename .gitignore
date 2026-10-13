@@ -1,0 +1,130 @@
+# ==========================================================
+# Git 忽略规则文件（告诉 Git：下列文件不要放进版本库）
+# 适用：跨学科课程实验 / 课程作品集（多语言混合场景）
+# ==========================================================
+
+# ---------- 1. Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- 2. Jupyter / 数据科学 ----------
+.profile/
+*.h5
+*.parquet
+*.feather
+
+# ---------- 3. Node.js / 前端 ----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+.nuxt/
+.svelte-kit/
+dist-ssr/
+.vite/
+.cache/
+.parcel-cache/
+
+# ---------- 4. Java ----------
+*.class
+*.jar
+*.war
+target/
+.gradle/
+.mvn/
+
+# ---------- 5. C / C++ ----------
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.lib
+cmake-build-*/
+CMakeCache.txt
+
+# ---------- 6. MATLAB / Octave ----------
+*.asv
+*.mex*
+octave-workspace
+
+# ---------- 7. R 语言 ----------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ---------- 8. LaTeX 排版 ----------
+*.aux
+*.log
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ---------- 9. 编辑器 / IDE ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.suo
+*.user
+
+# ---------- 10. 操作系统 ----------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+desktop.ini
+ehthumbs.db
+
+# ---------- 11. 环境变量与密钥（重要！绝不上传） ----------
+.env
+.env.*
+*.pem
+*.key
+_secrets/
+credentials.json
+
+# ---------- 12. 临时文件与大文件 ----------
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.mp4
+*.avi
+*.mov
+
+# ---------- 13. 日志文件 ----------
+*.log
+logs/
